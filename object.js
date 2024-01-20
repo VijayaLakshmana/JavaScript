@@ -19,3 +19,6 @@ const person = {
   };
 person.bio()
 person.introduceSelf()
+console.log(person.age);
+console.log(person["age"]);
+console.log(person["name"][1]);
