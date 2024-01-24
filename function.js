@@ -1,5 +1,5 @@
 const number=[2,34,35,76,45];
-let numbers=number.map(value=>value*2)
+let numbers=number.map(x=>x>40)
 console.log(numbers);
 numbers=number.map(convert)
 function convert(value){

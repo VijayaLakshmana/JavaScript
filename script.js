@@ -18,11 +18,4 @@ for(const num1 of num){
 }
 
 
-const myDate = new Date();
-let object = myDate;
-
-do {
-  object = Object.getPrototypeOf(object);
-  console.log(object);
-} while (object);
 
