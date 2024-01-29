@@ -13,7 +13,7 @@ console.log(me)
 console.log(Person)
 console.log(Person.prototype)
 console.log(Person.prototype===me.__proto__)
-console.log(me.__proto__.talk)
+console.log(me.__proto__)
 Person.prototype.talk=function(){
     return 'new talking';
 }

@@ -8,7 +8,7 @@
 // console.log(me)
 
 
-// constructor function
+// // constructor function
 // function Person(){
 //     this.talk=function(){
 //         return 'talking';
@@ -17,7 +17,7 @@
 // const me = new Person();
 // console.log(me.talk());
 // console.log(me)
-// console.log(me.prototype)
+// console.log(Person.prototype)
 // console.log(Person.prototype)
 // console.log(me.__proto__)
 
@@ -30,13 +30,14 @@
 // console.log(me)
 // Person.age=15
 // console.log(me)
+// console.log(Person)
 
 
-// function Person(){
-//     this.age=12;
-// }
-// const me=new Person();
-// console.log(me.age)
-// console.log(Person.age)
+function Person(){
+    this.age=12;
+}
+const me=new Person();
+console.log(me.age)
+console.log(Person.age)
 
 

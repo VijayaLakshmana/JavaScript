@@ -9,7 +9,7 @@ console.log(str);
 
 const obj = { a: 1, b: 2, c: 3 };
 
-for (const property in obj) {
+for (const property of obj) {
   console.log(`${property}:${obj[property]}`);
 }
 

@@ -87,14 +87,15 @@ const promise2=new Promise((resolve,reject)=>
         resolve("succefull")
             
         }
-        else{
+        else
+        {
             reject("failure")
         }
     }
 
 )
 async function display(){
-    const person=await Promise.any([promise,promise1,promise2]);
+    const person=await Promise.allSettled([promise1,promise2,promise]);
     console.log(person)
 }
 display()
