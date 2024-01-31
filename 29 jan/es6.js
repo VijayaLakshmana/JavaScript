@@ -1,27 +1,42 @@
 // //Block-Scoped Variables
 // let callbacks = []
-// for (let i = 0; i <= 2; i++) {
-//     callbacks[i] = function () { return i*2; }
+// for (var i = 0; i <= 2; i++) {
+//     callbacks[i] = function () { return i*2 }
 // }
+// console.log(callbacks)
 // console.log(callbacks[0]())
 // console.log(callbacks[1]())
 // console.log(callbacks[2]())
 
-// //
-// function foo () { return 3 }
-// console.log(foo())
-// {
-//     function foo () { return 1 }
-//     console.log(foo())
-//     {
-//         function foo () { return 2 }
-//         console.log(foo())
+// // //
+function foo () { return 4}
+console.log(foo())
+{
+function foo () { return 35}
+foo()
+console.log(foo())
+{
+    function foo () { return 1 }
+    console.log(foo())
+    {
+        function foo () { return 2 }
+        console.log(foo())
+        {
+            function foo () { return 6 }
+        console.log(foo())
+        
+        }
      
-//     }
-//     console.log(foo())
-// }
-//  console.log(foo())
-
+    }
+    console.log(foo())
+}
+ console.log(foo())
+}
+console.log(foo())
+function foo () { return 9 }
+console.log(foo())
+var foo= (()=> { return 10});
+console.log(foo())
 
 //  //Arrow function expression Bodies
 // evens=[1,2,3,4,5]
@@ -97,14 +112,3 @@
 // obj = { x, y }
 // console.log(obj)
 
-console.log(Symbol("foo") !== Symbol("foo"))
-const foo = Symbol()
-const bar = Symbol()
-console.log(foo) 
-typeof bar === "symbol"
-let obj = {}
-obj[foo] = "foo"
-obj[bar] = "bar"
-console.log(Object.keys(obj)) 
-console.log(Object.getOwnPropertyNames(obj) )
-console.log(Object.getOwnPropertySymbols(obj))
